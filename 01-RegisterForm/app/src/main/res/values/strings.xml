@@ -3,4 +3,10 @@
     <string name="name_input">Name</string>
     <string name="last_name">Last Name</string>
     <string name="register">register</string>
+    <string name="password">Password</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="name_inputReq">Name*</string>
+    <string name="lastName_inputReq">Last Name*</string>
+    <string name="password_inputReq">Password*</string>
+    <string name="bornDate">Born Date</string>
 </resources>
