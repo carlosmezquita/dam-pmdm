@@ -9,4 +9,5 @@
     <string name="lastName_inputReq">Last Name*</string>
     <string name="password_inputReq">Password*</string>
     <string name="bornDate">Born Date</string>
+    <string name="country">Country</string>
 </resources>

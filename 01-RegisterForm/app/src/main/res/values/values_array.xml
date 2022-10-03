@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="valores_array">
+        <item>Spain</item>
+        <item>Indonesia</item>
+        <item>Norway</item>
+        <item>United States of America</item>
+        <item>Switzerland</item>
+        <item>Iceland</item>
+        <item>Italy</item>
+        <item>France</item>
+        <item>Argentina</item>
+        <item>Antarctica</item>
+    </string-array>
+</resources>

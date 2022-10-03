@@ -120,12 +120,35 @@
             android:inputType="date"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/country_label"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_toStartOf="@id/centerShim"
+        android:layout_below="@id/phoneNumber_field"
+        android:text="Country:"
+        />
+
+    <Spinner android:id="@+id/country_selector"
+        android:layout_below="@+id/country_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_toStartOf="@+id/centerShim"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/regButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_below="@+id/phoneNumber_field"
+        android:layout_below="@+id/country_selector"
         android:layout_toLeftOf="@+id/centerShim"
         android:text="@string/register" />
     <TextView
