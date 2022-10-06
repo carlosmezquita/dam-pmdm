@@ -10,4 +10,9 @@
     <string name="password_inputReq">Password*</string>
     <string name="bornDate">Born Date</string>
     <string name="country">Country</string>
+    <string name="email">Email</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="exit">Exit</string>
+    <string name="send_newsletter">Send newsletter</string>
 </resources>

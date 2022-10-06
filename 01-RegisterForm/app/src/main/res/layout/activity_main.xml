@@ -17,6 +17,15 @@
 
     </View>
 
+    <TextView
+        android:id="@+id/formTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Formulario Registro"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
     <!--Set width to match_parent sets maximum width. alignParentLeft aligns
     the left edge of this view with the left edge of its parent. toLeftOf
     sets the right edge of this view to align with the left edge of the
@@ -29,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/centerShim"
+        android:layout_below="@+id/formTitle"
         android:hint="@string/name_inputReq">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -49,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/centerShim"
+        android:layout_below="@id/formTitle"
         android:hint="@string/lastName_inputReq">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -140,17 +151,75 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@id/bornDate_field"
+        android:layout_toEndOf="@id/centerShim"
         android:layout_marginTop="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/country_selector"
+        android:layout_marginTop="30dp"
+        android:layout_toStartOf="@id/centerShim"
+        android:gravity="end"
+        android:text="Gender:"/>
+    <RadioGroup
+        android:id="@+id/genderSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/country_selector"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@id/centerShim"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/male"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/female"/>
+
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/newsCheckbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/genderSelector"
+        android:text="@string/send_newsletter"/>
     <Button
         android:id="@+id/regButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_below="@+id/country_selector"
-        android:layout_toLeftOf="@+id/centerShim"
+        android:layout_below="@+id/newsCheckbox"
+        android:layout_toStartOf="@+id/centerShim"
         android:text="@string/register" />
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/newsCheckbox"
+        android:layout_toEndOf="@+id/centerShim"
+        android:backgroundTint="@android:color/secondary_text_dark"
+        android:textColor="@android:color/black"
+        android:text="@string/exit" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
