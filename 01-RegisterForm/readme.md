@@ -1,2 +1,2 @@
 ## Form Project
-![img.png](img.png)
+<img src="mainActivity.png" alt="Main Activity" width="200"/>
